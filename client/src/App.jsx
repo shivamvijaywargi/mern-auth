@@ -20,6 +20,7 @@ function App() {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
+      withCredentials: true,
     });
 
     if (resp.data.user) {
